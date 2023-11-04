@@ -1,2 +1,2 @@
 tasks:
-    - init: echo y|sdk install java
+    - command: echo y|sdk install java
