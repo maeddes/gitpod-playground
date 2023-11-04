@@ -1,2 +1,10 @@
+# Image of workspace. Learn more: https://www.gitpod.io/docs/configure/workspaces/workspace-image
+image: maeddes/gitpod:full
+
 tasks:
-    - command: echo y|sdk install java
+  - name: Script Task
+    before: echo before
+    init: echo init
+    command: echo command
+
+
