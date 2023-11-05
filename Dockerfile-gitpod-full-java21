@@ -12,4 +12,4 @@ ENV SHELL=/usr/bin/zsh
 
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions /home/gitpod/.zsh/zsh-autosuggestions
 
-ADD https://raw.githubusercontent.com/maeddes/dotfiles/main/.zshrc.gitpod.full /home/gitpod/.zshrc
+ADD --chown=gitpod:gitpod https://raw.githubusercontent.com/maeddes/dotfiles/main/.zshrc.gitpod.full /home/gitpod/.zshrc
