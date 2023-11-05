@@ -10,3 +10,5 @@ RUN brew install fzf exa buildpacks/tap/pack kubectl
 ENV SHELL=/usr/bin/zsh
 
 ADD https://raw.githubusercontent.com/maeddes/dotfiles/main/.zshrc.full .
+
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions /home/gitpod/.zsh/zsh-autosuggestions

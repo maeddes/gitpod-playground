@@ -1,3 +1,6 @@
+alias l='exa -glmF --header --git'
+alias k=kubectl
+
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
@@ -26,6 +29,7 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey "${terminfo[kcuu1]}" fzf-history-widget
+source /home/gitpod/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
