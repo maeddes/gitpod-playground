@@ -11,7 +11,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && \
 RUN pip install --upgrade pip
 
 # INSTALL COOL STUFF
-RUN brew install fzf exa buildpacks/tap/pack kubectl
+RUN brew install fzf eza buildpacks/tap/pack kubectl
 RUN yes | $(brew --prefix)/opt/fzf/install
 
 # DEFAULT TO ZSH
